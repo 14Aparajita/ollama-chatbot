@@ -1,0 +1,27 @@
+# ─────────────────────────────────────────────
+#  Local SLM Chatbot – Python Dependencies
+#  Compatible with Python 3.10+
+# ─────────────────────────────────────────────
+
+# Core Ollama client (official Python SDK)
+ollama==0.3.3
+
+# Frontend UI
+streamlit==1.35.0
+
+# Data handling & persistence
+# (stdlib json is used for storage; these are extras)
+python-dateutil==2.9.0
+
+# HTTP client (used internally; pinned for stability)
+httpx==0.27.0
+
+# Environment variable management
+python-dotenv==1.0.1
+
+# ─── Optional but recommended ─────────────────
+# Rich terminal output for the CLI runner
+rich==13.7.1
+
+# Watchdog for faster Streamlit reloads on macOS/Linux
+watchdog==4.0.1
