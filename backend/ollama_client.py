@@ -36,7 +36,10 @@ class OllamaClient:
     this class is purely responsible for network calls.
     """
 
-    def __init__(self, host: str = "http://localhost:11434") -> None:
+    def __init__(self, host: str = None) -> None:
+        import os
+        if host is None:
+            host = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
         self.client = ollama.Client(host=host)
 
     # ── Connectivity ──────────────────────────────────────────────────────────
