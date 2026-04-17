@@ -40,7 +40,7 @@ class OllamaClient:
         import os
         if host is None:
             host = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
-        self.client = ollama.Client(host=host)
+        self.client = ollama.Client(host=host, headers={"ngrok-skip-browser-warning": "1"})
 
     # ── Connectivity ──────────────────────────────────────────────────────────
 
