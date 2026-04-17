@@ -167,7 +167,7 @@ for chunk in client.chat_stream("llama3.2:3b", [{"role":"user","content":"Tell m
 ```
 
 ---
-
+```
 ## 💡 Resume-Worthy Improvements
 
 | Idea | Impact |
@@ -182,7 +182,7 @@ for chunk in client.chat_stream("llama3.2:3b", [{"role":"user","content":"Tell m
 | **Model benchmarking tab** | Compare models side-by-side on the same prompt |
 | **Voice I/O** | Add `whisper.cpp` for speech-to-text input |
 | **Eval harness** | Log responses + user thumbs-up/down for fine-tuning later |
-
+```
 ---
 
 ## 🐛 Troubleshooting
